@@ -1,0 +1,134 @@
+button {
+	outline: none;
+}
+
+.preloader {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+    z-index: -100;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-spinner {
+    font-size: 26px;
+    color: #4c65ff;
+}
+
+.preloader-active {
+    z-index: 999999;
+    pointer-events: all;
+    opacity: 1;
+}
+
+#tooltip {
+  display: none;
+  background: #333;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  z-index: -1;
+}
+
+#arrow::before {
+  content: '';
+  transform: rotate(45deg);
+  background: #333;
+}
+
+#tooltip[data-popper-placement^='top'] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^='bottom'] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^='left'] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^='right'] > #arrow {
+  left: -4px;
+}
+
+#tooltip[data-show] {
+  display: block;
+}
+
+.image-5 {
+  border-radius: 6px;
+}
+
+textarea, input[type=text], input[type=number], input[type=email] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+[v-cloak] {
+     display: none;
+}
+
+.t06_avatar {
+  background-image: url(../images/ellen.jpg);
+}
+
+.image-30 {
+  border-radius: 50%;
+}
+
+.dollarsign-old {
+  margin-top: 0px;
+  margin-right: 8px;
+  margin-bottom: 0px;
+  background-image: none;
+  font-family: 'Gt Walsheim', sans-serif;
+  color: rgba(74, 85, 104, 0.6);
+  font-size: 16px;
+  /*line-height: 1.2em;*/
+  font-weight: 500;
+  text-align: center;
+}
+
+.old_price {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-image: none;
+  font-family: 'Gt Walsheim', sans-serif;
+  color: #322f3b;
+  font-size: 28px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.disabled_feature {
+  color: rgba(50, 47, 59, 0.6);
+  text-decoration: line-through;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}

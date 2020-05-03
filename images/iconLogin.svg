@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>iconLogin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iconLogin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#1DDA67" cx="100" cy="100" r="100"></circle>
+        <g id="Group" transform="translate(27.000000, 27.000000)">
+            <circle id="Oval" fill="#19BF5A" cx="73" cy="73" r="73"></circle>
+            <g id="sm-user" transform="translate(33.000000, 30.000000)" fill="#FFFFFF">
+                <path d="M40,34.2857143 C49.468,34.2857143 57.1428571,26.6105714 57.1428571,17.1428571 C57.1428571,7.67514286 49.468,0 40,0 C30.5322857,0 22.8571429,7.67514286 22.8571429,17.1428571 C22.8571429,26.6105714 30.5322857,34.2857143 40,34.2857143 Z M0,85.7142857 C0,63.6228571 17.9086286,45.7142857 40,45.7142857 C62.0914286,45.7142857 80,63.6228571 80,85.7142857 L0,85.7142857 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

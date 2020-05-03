@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from verifiedbadge.co/dashboard/dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Apr 2020 15:47:34 GMT -->
+<head>
+    <script>
+        if (!localStorage.getItem('user')) {
+          window.location.href = 'index-2.html';
+        } else if (localStorage.getItem('user').isAdmin) {
+            window.location.href = '../admin/dashboard.html';
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title>Verifiedbadge | Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="../images/webclip.png" rel="apple-touch-icon">
+    <!-- plugins -->
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <script src="../../cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/vee-validate/2.1.1/vee-validate.min.js"></script>
+    <script src="../../momentjs.com/downloads/moment.min.js"></script>
+    <link rel="stylesheet" href="../../pro.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-IIED/eyOkM6ihtOiQsX2zizxFBphgnv1zbe1bKA+njdFzkr6cDNy16jfIKWu4FNH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app">
+        <div id="preloader" class="preloader preloader-active">
+            <i class="fas fa-circle-notch fa-spin preloader-spinner"></i>
+        </div>
+        <!-- Begin page -->
+        <div id="wrapper">
+            <!-- Topbar Start -->
+            <div class="navbar navbar-expand flex-column flex-md-row navbar-custom">
+                <div class="container-fluid">
+                    <!-- LOGO -->
+                    <a href="index.html" class="navbar-brand mr-0 mr-md-2 logo">
+                        <span class="logo-lg">
+                            <img src="../images/logo_black.svg" alt="" height="24" />
+                        </span>
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="" height="24">
+                        </span>
+                    </a>
+                    <ul class="navbar-nav bd-navbar-nav flex-row list-unstyled menu-left mb-0">
+                        <li class="">
+                            <button class="button-menu-mobile open-left disable-btn">
+                                <i data-feather="menu" class="menu-icon"></i>
+                                <i data-feather="x" class="close-icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
+                    </ul>
+                </div>
+            </div>
+            <!-- end Topbar -->
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+                <div class="media user-profile mt-2 mb-2">
+                    <img v-if="account" v-bind:src="account.profile_pic_url" class="avatar-sm rounded-circle mr-2" />
+                    <img v-if="account" v-bind:src="account.profile_pic_url" class="avatar-xs rounded-circle mr-2" />
+                    <div class="media-body">
+                        <h6 class="pro-user-name mt-0 mb-0" v-cloak>{{ account.username }}</h6>
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu" class="slimscroll-menu">
+                        <ul class="metismenu" id="menu-bar">
+                            <li class="menu-title">Navigation</li>
+                            <li>
+                                <a href="index.html">
+                                    <i data-feather="home"></i>
+                                    <span> Dashboard </span>
+                                </a>
+                            </li>
+                            <li style="cursor: pointer;">
+                                <a @click="logout()">
+                                    <i data-feather="log-out"></i>
+                                    <span> Logout </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row page-title align-items-center">
+                            <div class="col-sm-4 col-xl-6">
+                                <h4 class="mb-1 mt-0">Dashboard</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="media p-3">
+                                            <div class="media-body">
+                                                <span class="text-muted text-uppercase font-size-12 font-weight-bold">ACTIVE PLAN</span>
+                                                <h2 v-if="orders[0]" class="mb-0" v-cloak>{{ orders[0].packageObject.title }}</h2>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <span class="text-success font-weight-bold" style="font-size: 40px">
+                                                    <li class="far fa-box">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="media p-3">
+                                            <div class="media-body">
+                                                <span class="text-muted text-uppercase font-size-12 font-weight-bold">LAST UPDATE</span>
+                                                <h2 class="mb-0" v-cloak>{{ lastUpdate() }}</h2>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <span class="text-danger font-weight-bold" style="font-size: 40px">
+                                                    <li class="fal fa-clock">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="media p-3">
+                                            <div class="media-body">
+                                                <span class="text-muted text-uppercase font-size-12 font-weight-bold">YOUR ORDERS</span>
+                                                <h2 class="mb-0" v-cloak>{{ orders.length }}</h2>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <span class="text-success font-weight-bold" style="font-size: 40px">
+                                                    <li class="fal fa-shopping-cart">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <div class="media p-3">
+                                            <div class="media-body">
+                                                <span class="text-muted text-uppercase font-size-12 font-weight-bold">YOUR FOLLOWERS</span>
+                                                <h2 v-if="account.edge_followed_by" class="mb-0" v-cloak>{{ account.edge_followed_by.count }}</h2>
+                                            </div>
+                                            <div class="align-self-center">
+                                                <span class="text-danger font-weight-bold" style="font-size: 40px">
+                                                    <li class="far fa-users">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- products -->
+                        <div class="row">
+                            <div class="col-md-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body pb-0">
+                                        <div class="text-center mt-3">
+                                            <img v-if="account" :src="account.profile_pic_url" alt="" class="avatar-xl rounded-circle">
+                                            <h5 class="mt-2 mb-0" v-cloak>{{ account.username }}</h5>
+                                            <h6 class="text-muted font-weight-normal mt-2 mb-4" v-if="account.edge_followed_by" v-cloak>Followers: {{ account.edge_followed_by.count }}<br>
+                                                Following: {{ account.edge_follow.count }}<br>
+                                                Posts: {{ account.edge_owner_to_timeline_media.count }}
+                                            </h6>
+                                            <a :href="'https://instagram.com/' + account.username" target="_blank">
+                                                <button type="button" class="btn btn-primary btn-sm mr-1">Visit profile</button>
+                                            </a>
+                                            <br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mt-0 mb-0 header-title">Your orders</h5>
+                                        <div class="table-responsive mt-4">
+                                            <div v-if="hasPendingOrders()" class="alert alert-warning" style="display: flex; align-items: center; justify-content: space-between;" role="alert">
+                                                Important! You have orders that need more information before we can proceed.
+                                                <a :href="'information.html?id=' + this.orders[0]._id" class="btn btn-secondary">Submit information</a>
+                                            </div>
+                                            <table class="table table-hover table-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Package</th>
+                                                        <th scope="col">Price</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr v-if="orders" v-for="order in orders">
+                                                        <td v-cloak>{{ order.email }}</td>
+                                                        <td v-cloak>{{ order.packageObject.title }}</td>
+                                                        <td v-cloak>${{ order.packageObject.price }}</td>
+                                                        <td><span class="badge badge-soft-warning py-1" v-cloak>{{ statusString(order.status) }}</span></td>
+                                                        <td v-if="!order.status == 0"><a v-if="order.status == 1" :href="'information.html?id=' + order._id">Submit information</a><a v-else :href="'order.html?id=' + order._id">View order</a></td>
+                                                        <td v-else></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div> <!-- end table-responsive-->
+                                    </div> <!-- end card-body-->
+                                </div> <!-- end card-->
+                            </div> <!-- end col-->
+                        </div>
+                        <!-- end row -->
+                    </div>
+                </div> <!-- content -->
+                <!-- Footer Start -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                2020 &copy; Verifiedbadge. All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- end Footer -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- END wrapper -->
+    </div>
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
+    <!-- optional plugins -->
+    <script src="assets/libs/moment/moment.min.js"></script>
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+    <!-- page js -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+    <script>
+    Vue.use(VeeValidate);
+
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                account: JSON.parse(localStorage.getItem('account')) || {},
+                user: JSON.parse(localStorage.getItem('user')),
+                orders: [],
+                loading: false,
+                errorMessage: ''
+            }
+        },
+        created() {
+            this.checkProfile();
+            this.getOrders();
+        },
+        methods: {
+            checkProfile() {
+                axios.get(`https://www.instagram.com/${this.user.instagramUsername}/?__a=1`)
+                    .then(response => {
+                        localStorage.setItem('account', JSON.stringify(response.data.graphql.user));
+                        this.account = response.data.graphql.user;
+                    }).catch(error => {
+                        // TODO
+                        console.log(error);
+                    });
+            },
+            logout() {
+                document.getElementById('preloader').classList.add('preloader-active');
+                sessionStorage.clear();
+                localStorage.clear();
+                window.location.replace('../index.html');
+            },
+            getOrders() {
+                axios.get('https://api.verifiedbadge.co/order/myorders', { headers: { Authorization: localStorage.getItem('token') } })
+                    .then(response => {
+                        this.orders = response.data.orders;
+                    });
+            },
+            statusString(status) {
+                if (status == "0") {
+                    return "Pending payment"
+                } else if (status == "1") {
+                    return "Pending information"
+                } else if (status == "2") {
+                    return "In progress"
+                } else if (status == "3") {
+                    return "Finished"
+                }
+            },
+            hasPendingOrders() {
+                if (!this.orders) return false;
+                var count = 0;
+                this.orders.forEach(function(order) {
+                    if (order.status == '1') {
+                        count++;
+                    }
+                });
+
+                if (count > 0) {
+                    return true;
+                }
+            },
+            lastUpdate() {
+                if (!this.orders) return "";
+                var count = this.orders.length;
+                var order = this.orders[count - 1];
+
+                if (!order || !order.notesObject) return "";
+                var notesCount = order.notesObject.length;
+                if (notesCount > 0) {
+                    var note = order.notesObject[notesCount - 1];
+                    return moment(note.timestamp).format('MM/DD/YYYY');
+                } else {
+                    return moment(order.transactionDate).format('MM/DD/YYYY');
+                }
+            }
+        }
+    });
+    </script>
+</body>
+
+
+<!-- Mirrored from verifiedbadge.co/dashboard/dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 26 Apr 2020 15:47:43 GMT -->
+</html>

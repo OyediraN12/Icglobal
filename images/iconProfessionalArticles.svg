@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>iconProfessionalArticles</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iconProfessionalArticles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#027AFF" cx="100" cy="100" r="100"></circle>
+        <g id="Group" transform="translate(27.000000, 27.000000)">
+            <circle id="Oval" fill="#026EE6" cx="73" cy="73" r="73"></circle>
+            <g id="sm-shield-check" transform="translate(33.000000, 32.000000)" fill="#FFFFFF">
+                <path d="M0.83055,15.99455 C15.87185,15.79045 29.5764,10.05165 40,0.7223 C50.4235,10.05165 64.128,15.79045 79.1695,15.99455 C79.7155,19.2484 80,22.59105 80,26.00015 C80,52.1245 63.304,74.349 40,82.586 C16.69615,74.349 0,52.1245 0,26.00015 C0,22.59105 0.2843,19.2484 0.83055,15.99455 Z M58.5355,34.53555 C60.488,32.5829 60.488,29.4171 58.5355,27.46445 C56.583,25.51185 53.417,25.51185 51.4645,27.46445 L35,43.929 L28.53555,37.46445 C26.5829,35.51185 23.4171,35.51185 21.46445,37.46445 C19.51185,39.4171 19.51185,42.583 21.46445,44.5355 L31.46445,54.5355 C33.4171,56.488 36.5829,56.488 38.53555,54.5355 L58.5355,34.53555 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

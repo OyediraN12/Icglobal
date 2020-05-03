@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>iconEasytoUse</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iconEasytoUse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#1DDA67" cx="100" cy="100" r="100"></circle>
+        <g id="Group" transform="translate(27.000000, 27.000000)">
+            <circle id="Oval" fill="#19BF5A" cx="73" cy="73" r="73"></circle>
+            <g id="sm-lightning-bolt" transform="translate(33.000000, 22.000000)" fill="#FFFFFF">
+                <path d="M47.432,0.264057143 C49.8108571,1.01388571 51.4285714,3.21988571 51.4285714,5.714 L51.4285714,34.2854286 L74.2857143,34.2854286 C76.4165714,34.2854286 78.3702857,35.4709143 79.3542857,37.3608 C80.3382857,39.2506857 80.1891429,41.5310857 78.9668571,43.2766286 L38.9670857,100.419429 C37.5368,102.462857 34.9465143,103.342286 32.5677714,102.592571 C30.1890857,101.842857 28.5714286,99.6365714 28.5714286,97.1428571 L28.5714286,68.5714286 L5.71428571,68.5714286 C3.5836,68.5714286 1.62982857,67.3857143 0.645828571,65.496 C-0.338114286,63.6057143 -0.188914286,61.3257143 1.03297143,59.58 L41.0331429,2.43708571 C42.4634286,0.393828571 45.0537143,-0.48576 47.432,0.264057143 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

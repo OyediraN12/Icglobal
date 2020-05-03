@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1049.089" height="374" viewBox="0 0 1049.089 374">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.173" y1="0.344" x2="1.051" y2="1.061" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#08093e"/>
+      <stop offset="1" stop-color="#21256b"/>
+    </linearGradient>
+  </defs>
+  <g id="BackGround" transform="translate(-5041 -1314)">
+    <g id="CYBER_MONDAY" data-name="CYBER MONDAY" transform="translate(4285 961)">
+      <rect id="Rectangle_29" data-name="Rectangle 29" width="1049" height="374" transform="translate(756 353)" fill="url(#linear-gradient)"/>
+      <path id="Intersection_1" data-name="Intersection 1" d="M0,137.018V18.982A78,78,0,1,1,0,137.018Z" transform="translate(756 505)" fill="url(#linear-gradient)"/>
+      <path id="Intersection_2" data-name="Intersection 2" d="M0,72.5A91.343,91.343,0,0,1,35.671,0H123V158.433A91.561,91.561,0,0,1,0,72.5Z" transform="translate(1682 353)" fill="url(#linear-gradient)"/>
+      <path id="heart-solid" d="M45.352,34.973c-5.377-4.582-13.374-3.758-18.31,1.334L25.109,38.3l-1.933-1.992c-4.926-5.093-12.933-5.917-18.31-1.334a14.09,14.09,0,0,0-.971,20.4L22.881,74.978a3.076,3.076,0,0,0,4.445,0L46.313,55.373A14.081,14.081,0,0,0,45.352,34.973Z" transform="translate(785.012 535.009)" fill="rgba(255,255,255,0.26)"/>
+      <path id="users-solid" d="M11.622,55.244A7.748,7.748,0,1,0,3.874,47.5,7.755,7.755,0,0,0,11.622,55.244Zm54.237,0A7.748,7.748,0,1,0,58.111,47.5,7.755,7.755,0,0,0,65.859,55.244Zm3.874,3.874H61.985a7.725,7.725,0,0,0-5.46,2.252,17.708,17.708,0,0,1,9.092,13.244h7.99a3.87,3.87,0,0,0,3.874-3.874V66.867A7.755,7.755,0,0,0,69.733,59.119Zm-30.993,0A13.559,13.559,0,1,0,25.181,45.559,13.552,13.552,0,0,0,38.741,59.119Zm9.3,3.874h-1a18.72,18.72,0,0,1-16.586,0h-1A13.95,13.95,0,0,0,15.5,76.939v3.487a5.813,5.813,0,0,0,5.811,5.811H56.174a5.813,5.813,0,0,0,5.811-5.811V76.939A13.95,13.95,0,0,0,48.038,62.993ZM20.956,61.37a7.725,7.725,0,0,0-5.46-2.252H7.748A7.755,7.755,0,0,0,0,66.867v3.874a3.87,3.87,0,0,0,3.874,3.874h7.978a17.753,17.753,0,0,1,9.1-13.244Z" transform="translate(1727.607 367.275)" fill="rgba(255,255,255,0.2)"/>
+    </g>
+  </g>
+</svg>

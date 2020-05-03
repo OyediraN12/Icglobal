@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>iconHighSuccessRate</title>
+    <desc>Created with Sketch.</desc>
+    <g id="iconHighSuccessRate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#FF9230" cx="100" cy="100" r="100"></circle>
+        <g id="Group" transform="translate(27.000000, 27.000000)">
+            <circle id="Oval" fill="#E6832B" cx="73" cy="73" r="73"></circle>
+            <g id="icon-trophy" transform="translate(28.000000, 28.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M22.5,9 L22.5,18 L9,18 L9,36 C9,40.95 13.05,45 18,45 L22.5,45 L22.5,54 L18,54 C8.0588745,54 0,45.9411255 0,36 L0,18 C0,13.05 4.05,9 9,9 L22.5,9 Z M67.5,18 L67.5,9 L81,9 C85.9705627,9 90,13.0294373 90,18 L90,36 C90,45.9411255 81.9411255,54 72,54 L67.5,54 L67.5,45 L72,45 C76.9705627,45 81,40.9705627 81,36 L81,18 L67.5,18 Z M54,81 L63,81 C65.4852814,81 67.5,83.0147186 67.5,85.5 C67.5,87.9852814 65.4852814,90 63,90 L27,90 C24.5147186,90 22.5,87.9852814 22.5,85.5 C22.5,83.0147186 24.5147186,81 27,81 L36,81 C38.4852814,81 40.5,78.9852814 40.5,76.5 L40.5,63 L49.5,63 L49.5,76.5 C49.5,78.9852814 51.5147186,81 54,81 Z" id="Shape"></path>
+                <path d="M27,0 L63,0 C67.9705627,0 72,4.02943725 72,9 L72,40.5 C72,55.4116882 59.9116882,67.5 45,67.5 C30.0883118,67.5 18,55.4116882 18,40.5 L18,9 C18,4.05 22.05,0 27,0 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

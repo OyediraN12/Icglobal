@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="194px" viewBox="0 0 1440 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>wave2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1444.10152" height="789.814401"></rect>
+    </defs>
+    <g id="wave2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="waves_bg" transform="translate(721.050761, 83.122222) scale(1, -1) translate(-721.050761, -83.122222) translate(-1.000000, -312.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle"></g>
+            <g mask="url(#mask-2)">
+                <g transform="translate(0.000000, 299.479753)"></g>
+            </g>
+            <path d="M0.000507592802,773.704688 L0.000507592802,283.806063 C93.4001212,341.468606 368.056049,481.076422 726.870863,395.107967 C1113.23781,302.538268 1379.98392,435.930103 1444.10203,473.048335 L1444.10203,773.704688 L0.000507592802,773.704688 Z" id="Intersection_3" fill="#8A03E1" fill-rule="nonzero" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2845" height="1556" viewBox="0 0 2845 1556">
+  <defs>
+    <clipPath id="clip-waves_bg">
+      <rect width="2845" height="1556"/>
+    </clipPath>
+  </defs>
+  <g id="waves_bg" clip-path="url(#clip-waves_bg)">
+    <path id="Intersection_3" data-name="Intersection 3" d="M-3221.862,1561V595.859c184.005,113.6,725.1,388.639,1431.995,219.274,761.175-182.37,1286.687,80.423,1413.005,153.549V1561Z" transform="translate(3221.863 -5)" fill="rgba(0,0,0,0.03)"/>
+    <path id="Intersection_4" data-name="Intersection 4" d="M-3206.881,1561V1024.133c199.543,68.47,1038.4,329.906,1647.35,114.9C-960.643,927.587-483.1,1165.467-361.881,1235.7V1561Z" transform="translate(3206.881 -5)" fill="rgba(0,0,0,0.03)"/>
+  </g>
+</svg>

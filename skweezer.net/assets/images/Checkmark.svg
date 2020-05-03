@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="17px" viewBox="0 0 22 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Icons / Checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.1718293,4.14062466 C20.2655791,4.04687489 20.390579,4 20.5468284,4 C20.7030778,4 20.8437025,4.04687489 20.9687024,4.14062466 L22.2811993,5.49999642 C22.4061992,5.5937462 22.4686988,5.71874614 22.4686988,5.87499553 C22.4686988,6.03124492 22.4061992,6.17186958 22.2811993,6.29686952 L8.21873279,20.359336 C8.12498301,20.4530858 7.99998307,20.4999607 7.84373368,20.4999607 C7.68748429,20.4999607 7.54685963,20.4530858 7.42185969,20.359336 L1.18749955,14.078101 C1.06249961,13.9843512 1,13.8593513 1,13.7031019 C1,13.5468525 1.06249961,13.4062278 1.18749955,13.2812279 L2.49999642,11.968731 C2.62499636,11.8437311 2.76562103,11.7812314 2.92187042,11.7812314 C3.07811981,11.7812314 3.20311975,11.8437311 3.29686952,11.968731 L7.84373368,16.5155952 L20.1718293,4.14062466 Z" id="path-1"></path>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Checkout/-3" transform="translate(-833.000000, -631.000000)">
+            <g id="Group" transform="translate(256.000000, 160.000000)">
+                <g id="Group-10" transform="translate(576.000000, 373.000000)">
+                    <g id="Group-12" transform="translate(0.000000, 94.000000)">
+                        <g id="Group-11">
+                            <g id="Icons-/-Checkmark">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Checkmark" fill-rule="nonzero"></g>
+                                <g id="Colors-/-Accent-/-Success" mask="url(#mask-2)" fill="#3AC430" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
